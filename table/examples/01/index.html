@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Jacknife Asset</title>
+	<link type="text/css" media="all" rel="stylesheet" href="../../dist/css/styles.min.css">
+</head>
+<body>
+	<div class="wrapper">
+		<section>
+			<div class="container">
+				<select data-filter-table="MealPlanTable" data-filter-column="1">
+					<option value="default">All Meals</option>
+					<option value="Breakfast">Breakfast</option>
+					<option value="Brunch">Brunch</option>
+					<option value="Lunch">Lunch</option>
+					<option value="Dinner">Dinner</option>
+				</select>
+				<select data-filter-table="MealPlanTable" data-filter-column="2" multiple>
+					<option value="default">All Diets</option>
+					<option value="Omnivorous">Omnivorous</option>
+					<option value="Pescatarian">Pescatarian</option>
+					<option value="Vegetarian">Vegetarian</option>
+					<option value="Vegan">Vegan</option>
+				</select>
+				<table id="MealPlanTable" class="table-sort table-filter" data-date-format="MDY">
+					<thead>
+						<tr>
+							<th class="sort-trigger"><span>Recipe</span></th>
+							<th class="sort-trigger"><span>Meal</span></th>
+							<th class="sort-trigger"><span>Diet</span></th>
+							<th class="sort-trigger sort-asc active" data-sort="date"><span>Date</span></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Assorted Cereal w/ Almond Milk</td>
+							<td>Breakfast</td>
+							<td>Vegan</td>
+							<td>07-19-18</td>
+						</tr>
+						<tr>
+							<td>Eggs Benedict</td>
+							<td>Brunch</td>
+							<td>Omnivorous</td>
+							<td>07/17/17</td>
+						</tr>
+						<tr>
+							<td>Pheasant Pot Pie</td>
+							<td>Dinner</td>
+							<td>Omnivorous</td>
+							<td>17/12/17</td>
+						</tr>
+						<tr>
+							<td>Warm Lentil and Beet Salad</td>
+							<td>Dinner</td>
+							<td>Vegan</td>
+							<td>July 5, 2018</td>
+						</tr>
+						<tr>
+							<td>Wild Mushroom Risotto</td>
+							<td>Dinner</td>
+							<td>Vegetarian</td>
+							<td>July 5, 2017</td>
+						</tr>
+						<tr>
+							<td>Grilled Chicken and Avocado Club Sandwich</td>
+							<td>Lunch</td>
+							<td>Omnivorous</td>
+							<td>July 4, 2017</td>
+						</tr>
+						<tr>
+							<td>Smoked Salmon Sandwich</td>
+							<td>Lunch</td>
+							<td>Pescatarian</td>
+							<td>July 4, 2018</td>
+						</tr>
+						<tr>
+							<td>Grilled Cheese</td>
+							<td>Lunch</td>
+							<td>Vegetarian</td>
+							<td>July 3, 2018</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+	</div>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../../dist/js/scripts.min.js"></script>
+</body>
+</html>

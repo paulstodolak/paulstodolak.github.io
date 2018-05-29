@@ -1,0 +1,26 @@
+.flex-wrap {
+	.flex-col:first-child {
+		.tile-wrap {
+			float: right;
+		}
+	}
+}
+
+.tile-wrap {
+	width: 100%;
+	max-width: 500px;
+	height: 100%;
+}
+
+.tile {
+	width: 100%;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+	box-sizing: border-box;
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}

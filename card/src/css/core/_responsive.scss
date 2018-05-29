@@ -1,0 +1,30 @@
+@media screen and (max-width: 1000px) {
+	.block-wrap {
+		display: block;
+		.block-col {
+			display: block;
+			width: 50%;
+			float: left;
+		}
+	}
+	.flex-wrap {
+		flex-wrap: wrap;
+		.flex-col {
+			width: 50%;
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.block-wrap {
+		.block-col {
+			width: 100%;
+			float: none;
+		}
+	}
+	.flex-wrap {
+		.flex-col {
+			width: 100%;
+		}
+	}
+}

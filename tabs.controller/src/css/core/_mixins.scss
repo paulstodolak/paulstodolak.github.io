@@ -1,0 +1,13 @@
+@mixin transform($transforms) {
+		-ms-transform: $transforms;
+	-webkit-transform: $transforms;
+			transform: $transforms;
+}
+
+%clearfix {
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}

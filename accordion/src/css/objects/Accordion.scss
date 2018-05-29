@@ -1,0 +1,17 @@
+[data-acc-toggle] {
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.accordion {
+	position: relative;
+	[data-acc-target] {
+		display: none;
+	}
+	&.active {
+		[data-acc-target] {
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.card {
+	position: relative;
+	padding: 0 0.5rem;
+	.card-content {
+		@extend %clearfix;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		.card-img {
+			overflow: hidden;
+		}
+		.card-img,
+		.card-meta {
+			position: relative;
+			text-align: center;
+		}
+		.card-img {
+			img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+		}
+	}
+}

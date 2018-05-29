@@ -1,0 +1,91 @@
+// Elements
+
+html,
+body {
+	font-size: $base-size;
+	color: $black;
+}
+
+h1, h2, h3, h4, h5, h6,
+dd, dl, dt, figcaption, figure,
+hr, li, ol, ul, p, pre, a,
+caption, col, colgroup,
+table, tbody, td, tfoot,
+th, thead, tr, button, fieldset,
+label, legend, optgroup, option,
+select, textarea {
+	color: inherit;
+}
+
+a {
+	color: inherit;
+	&:hover {
+		cursor: pointer;
+	}
+	img {
+		display: block;
+	}
+}
+
+hr {
+	width: 100%;
+	border: 0;
+	border-top: 10px solid $black;
+	background: $black;
+	color: $black;
+	margin: 1.5rem 0;
+}
+
+video {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+// Utilities
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
+
+.desktop-only {
+	display: block;
+}
+
+.mobile-only {
+	display: none;
+}
+
+.skip-to-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	img {
+		border: 0;
+	}
+}
+
+.clearfix {
+	@extend %clearfix;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}

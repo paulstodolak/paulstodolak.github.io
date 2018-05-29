@@ -1,0 +1,56 @@
+body.preloading {
+	overflow: hidden;
+}
+
+#Preloader {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: $white;
+	z-index: 100;
+	.container {
+		position: absolute;
+		height: 100vh;
+		width: 100%;
+		.preloader-logo {
+			width: 4.375rem;
+			height: 4.375rem;
+			position: fixed;
+			top: 50%;
+			right: 50%;
+			@include transform(translate(50%, -50%));
+			svg {
+				width: 4.375rem;
+				height: 4.375rem;
+				box-sizing: border-box;
+				position: absolute;
+				top: 50%;
+				right: 50%;
+			}
+			.svg-logo {
+				padding: 5px;
+				@include transform(translate(50%, -50%));
+				path {
+					fill: $black;
+				}
+			}
+			.preloader-circle {
+				margin-top: -50%;
+				margin-right: -50%;
+				@include animation(preload_animation 1.5s infinite linear);
+				path {
+					stroke: $black;
+				}
+			}
+		}
+	}
+}
+
+@keyframes preload_animation {
+	0% { 
+		transform: rotate(0deg);
+	}
+	100% { 
+		transform: rotate(360deg);
+	}
+}

@@ -1,0 +1,48 @@
+.countdown {
+	&.countdown-complete {
+		.countdown-timer {
+			display: none;
+		}
+	}
+	.countdown-int {
+		@extend %clearfix;
+		display: block;
+		position: relative;
+		right: 50%;
+		@include transform(translate(50%, 0));
+	}
+	.countdown-timer {
+		float: left;
+		margin: 1rem 0.5rem;
+		position: relative;
+		.timer-int {
+			.timer-count {
+				color: inherit;
+				font-size: 2.5rem;
+				line-height: 1;
+				display: block;
+			}
+			> span {
+				font-size: 1rem;
+				font-weight: normal;
+				color: inherit;
+			}
+		}
+	}
+}
+
+.countdown.circle-countdown {
+	max-height: 7.5rem;
+	height: 7.5rem;
+	.countdown-timer {
+		width: 5.75rem;
+		height: 5.75rem;
+		.timer-int {
+			text-align: center;
+			position: absolute;
+			top: 50%;
+			right: 50%;
+			@include transform(translate(50%, -50%));
+		}
+	}
+}

@@ -1,0 +1,25 @@
+.tab-menu {
+	padding: 0;
+	@extend %clearfix;
+	button {
+		text-decoration: none;
+		margin-right: 1.25rem;
+		color: $black;
+		display: block;
+		float: left;
+		position: relative;
+		&:last-child {
+			margin-right: 0;
+		}
+		&.active {
+			opacity: 0.75;
+		}
+	}
+}
+
+.tab-content {
+	display: none;
+	&.active {
+		display: block;
+	}
+}
